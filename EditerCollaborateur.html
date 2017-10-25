@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    
+        <link href="styles.css" rel="stylesheet">
+        <script src="javascript.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script>
+     $(document).ready(function() {
+		$("#tIdentity").click(function() {
+					
+                    $("#identity").show();
+                    $("#poste").hide();
+                    $("#cb").hide();
+                });
+                $("#tPoste").click(function() {
+					
+                    $("#identity").hide();
+                    $("#poste").show();
+                    $("#cb").hide();
+                });
+                $("#tCb").click(function() {
+					
+                    $("#identity").hide();
+                    $("#poste").hide();
+                    $("#cb").show();
+                });
+                $("#identity").hide();
+                    $("#poste").hide();
+                    $("#cb").hide();
+            });
+    </script>
+
+     
+    </head>
+        <body>
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                    <a class="navbar-brand" href="#">Login</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                                        <a class="nav-link" href="ListeCollaborateur.html">Collaborateur <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Statistique</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="activite.html">Activité</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+        <form>
+        
+            <div class="row">
+                <div class="col-4">
+        
+                                <img src="image/specifications-fra.gif"  alt="" style="width: 500px;">
+        
+                </div>
+                <div class="col-8">
+                              
+                               
+                                                <div class="row">
+                                                    <div class="col-6" ><h1> NOM Prénom - Matricul  </h1></div>
+                                                    <input type="checkbox" aria-label="...">
+                                                    <div class="col-2"><label>Désactiver</label></div> 
+                                                </div>
+                                               
+                                
+                                                <div class="container" id="tIdentity">
+                                                        <li class="list-group-item">
+                                                            <p>Identité</p>
+                                                        </li>
+                                                </div>
+                                                <div class="container" id="identity">
+                                                        <li class="list-group-item">
+                                                                
+                                                        <div class="row">
+                                                                <div class="col-4 offset-1" > <label>Civilité</label></div>
+                                                                <div class="col-6" > <ul class="dropdown-menu"></ul></div>
+                                                        </div>
+                                                         <div class="row">
+                                                            <div class="col-4 offset-1" > <label>Nom</label></div>
+                                                            <div class="col-6" ><input type="text" class="form-control" ></div>
+                                                        </div>
+                                                        <div class="row">
+                                                                <div class="col-4 offset-1" > <label>Prénom</label></div>
+                                                                <div class="col-6" ><input type="text" class="form-control" ></div>
+                                                        </div>
+                                                        <div class="row">
+                                                                <div class="col-4 offset-1" > <label>Date de naissance</label></div>
+                                                                <div class="col-6" ><input type="text" class="form-control" ></div>
+                                                        </div>
+                                                        <div class="row">
+                                                                <div class="col-4 offset-1" > <label>Adresse</label></div>
+                                                                <div class="col-6" ><input type="text" class="form-control" ></div>
+                                                        </div>
+                                                        <div class="row">
+                                                                <div class="col-4 offset-1" > <label>Numéro de sécuriter social</label></div>
+                                                                <div class="col-6" ><input type="text" class="form-control" ></div>
+                                                        </div>
+                                                        <div class="row">
+                                                                <div class="col-4 offset-1" > <label>Téléphone</label></div>
+                                                                <div class="col-6" ><input type="text" class="form-control" ></div>
+                                                        </div>
+                                                    
+                                                        </li>
+                                                </div>
+                                
+                                                <div class="container" id="tPoste">
+                                                        <li class="list-group-item">
+                                                            <p>Poste</p>
+                                                        </li>
+                                                </div>
+                                
+                                                <div class="container" id="poste">
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                                <div class="col-4 offset-1" > <label>Département</label></div>
+                                                                <div class="col-6" >
+                                                                <select class="col-12">
+                                                                                <option></option>
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3</option>
+                                                                </select>
+                                                             </div>
+                                                            </div>
+                                                         <div class="row">
+                                                            <div class="col-4 offset-1" > <label>Nom</label></div>
+                                                            <div class="col-6" ><input type="text" class="form-control" ></div>
+                                                        </div>
+                                                    </li>
+                                                </div>
+                                
+                                                <div class="container" id="tCb">
+                                                        <li class="list-group-item">
+                                                            <p>Coordonées Bancaires</p>
+                                                        </li>
+                                                </div>
+                                
+                                            <div class="container" id="cb">
+                                                <li class="list-group-item">
+                                                    <div class="row">
+                                                            <div class="col-4 offset-1" > <label>IBAN</label></div>
+                                                            <div class="col-6" ><input type="text" class="form-control" ></div>
+                                                        </div>
+                                                     <div class="row">
+                                                        <div class="col-4 offset-1" > <label>BIC</label></div>
+                                                        <div class="col-6" ><input type="text" class="form-control" ></div>
+                                                    </div>
+                                                </li>
+                                                   
+                                        </div>
+                                        <div class="row">
+                                                        <input id="Ajouter" type="button" class="btn btn-primary col-2 offset-9" value="Sauvegarder"></input> 
+                                        </div>
+                        </div>
+                </div>
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

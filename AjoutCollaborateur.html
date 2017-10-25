@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Bootstrap core CSS -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Custom styles for this template -->
+    
+        <link href="styles.css" rel="stylesheet">
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        
+        <script>
+            $(document).ready(function() {
+            $("#Ajouter").click(function () { 
+                if (("#nom").val() = "") { 
+                $("#nom").addClass("is-invalid");
+                $("#nom").val(''); 
+                }; 
+            });
+        })
+            
+             
+        </script>
+        <style>
+
+        form {
+                margin-top: 100px; 
+              }
+
+
+        .row {
+            margin-top: 20px;
+        }
+
+        h1 {
+            margin-left :0.5em;
+        }
+        </style>
+
+    </head>
+        <body>
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                    <a class="navbar-brand" href="#">Login</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="ListeCollaborateur.html">Collaborateur <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Statistique</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="activite.html">Activité</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                </nav>
+
+        <form>
+            <div class="">
+                <h1>Nouveau Collaborateur</h1>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 offset-1"  > <label for="nom">nom</label></div>
+                <div class="col-6" ><input type="text" class="form-control is-valid" id="nom" ></div>
+                <div class="invalid-feedback">
+                  Veuillez rentrer un nom.
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 offset-1" ><label for="prenom">Prénom</label></div>
+                <div class="col-6" ><input type="text" class="form-control is-valid" id="prenom" ></div>
+                <div class="invalid-feedback">
+                        Veuillez rentrer un Prénom.
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 offset-1" ><label for="dateDeNaissance">Date de naissance</label></div>
+                <div class="col-6" ><input type="text" class="form-control is-valid" id="dateDeNaissance"  ></div>
+                <div class="invalid-feedback">
+                        Veuillez rentrer une Date de naissance.
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 offset-1" ><label for="adresse">Adresse</label></div>
+                <div class="col-6" ><input type="text" class="form-control is-valid" id="adresse"  ></div>
+                <div class="invalid-feedback">
+                        Veuillez rentrer une Adresse.
+                </div>
+              </div>
+              <div class="row">
+                 <div class="col-4 offset-1" ><label for="sécuriterSocial">Numéro de sécurité sociale</label></div>
+                <div class="col-6" ><input type="text" class="form-control is-valid" id="sécuriterSocial"  ></div>
+                <div class="invalid-feedback">
+                        Veuillez rentrer un Numéro de sécurité sociale.
+                </div>
+              </div>
+              <div class="row">
+                <input id="Ajouter" type="button" class="btn btn-primary col-2 offset-9" value="Créer"></input> 
+              </div>
+            </div>
+
+            </div>
+        </form>
+    </body>
+</html>

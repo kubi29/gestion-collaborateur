@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <style>
+    
+    .bouton{
+        border:1px solid #000;
+        
+        background : blue;
+        color: white;
+        text-decoration:none; 
+        border-radius : 5px;
+        position:absolute;
+        right:0;
+        top:60px;
+         margin-top:6px;
+        margin-right:10px;
+        }
+        h1 {
+            margin-left :0.5em;
+        }
+
+        image{
+            max-width: 80%;
+            margin: 10px
+        }
+        
+    </style>
+
+</head>
+    <body>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#">Login</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="ListeCollaborateur.html">Collaborateur <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Statistique</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="activite.html">Activité</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+
+        <form>
+          
+            <div class="row">
+                <div col-2 offset-9>
+                    <a href="AjoutCollaborateur.html" class="bouton">Ajouter un nouveau collaborateur</a>
+                </div> 
+            </div>
+
+            <div class="row">
+                 <h1>Les collaborateur</h1>   
+            </div>
+
+            <div class="row">
+                <div class="col-3"><label>Rechercher un nom ou un prénom qui commance par :</label></div>
+                <div class="col-2"><input type="text" id="recherche"></div>
+                <div class="col-2"><input type="button" class="btn btn-primary " value="Rechercher"></div>
+                <div class="col-1 offset-1"><input type="checkbox" ></div>
+                <div class="col-2"><label>Voir les collaborateur désactivés</label></div>
+            </div>
+
+            <div class="row">
+                    <div class="col-2 offset-1"><label>Filtrer par département :</label></div>
+                    <div class="col-2" >
+                            <select class="col-10">
+                                            <option>Tous</option>
+                                            <option>Compatibilité</option>
+                                            <option>Ressource Humaines</option>
+                                            <option>Informatique</option>
+                            </select>
+                    </div>
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-4">
+                    <li class="list-group-item">
+                        <h3>Nom Prénom</h3>
+                    </li>
+                    <div class="row">
+                        <div class="col-4">
+
+                            <img src="image/nina4.jpg">
+
+                        </div>
+
+                        <div class="col-8">
+                                <div class="row">
+                                   <div class="col-6"> <label >Fonction</label></div>
+                                   <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6"> <label >Département</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6"> <label >Email</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6">  <label >Téélphone</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <input id="Editer" type="button" class="btn btn-primary col-2 offset-9" value="Editer"></input> 
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                    <div class="col-4">
+                    <li class="list-group-item">
+                        <h3>Nom Prénom</h3>
+                    </li>
+                    <div class="row">
+                        <div class="col-4">
+
+                            <img src="image/nina4.jpg">
+
+                        </div>
+
+                        <div class="col-8">
+                                <div class="row">
+                                   <div class="col-6"> <label >Fonction</label></div>
+                                   <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6"> <label >Département</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6"> <label >Email</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6">  <label >Téélphone</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <input id="Editer" type="button" class="btn btn-primary col-2 offset-9" value="Editer"></input> 
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                    <div class="col-4">
+                    <li class="list-group-item">
+                        <h3>Nom Prénom</h3>
+                    </li>
+                    <div class="row">
+                        <div class="col-4">
+
+                            <img src="image/nina4.jpg">
+
+                        </div>
+
+                        <div class="col-8">
+                                <div class="row">
+                                   <div class="col-6"> <label >Fonction</label></div>
+                                   <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6"> <label >Département</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6"> <label >Email</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6">  <label >Téélphone</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <input id="Editer" type="button" class="btn btn-primary col-2 offset-9" value="Editer"></input> 
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                    <div class="col-4">
+                    <li class="list-group-item">
+                        <h3>Nom Prénom</h3>
+                    </li>
+                    <div class="row">
+                        <div class="col-4">
+
+                            <img src="image/nina4.jpg">
+
+                        </div>
+
+                        <div class="col-8">
+                                <div class="row">
+                                   <div class="col-6"> <label >Fonction</label></div>
+                                   <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6"> <label >Département</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6"> <label >Email</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6">  <label >Téélphone</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <input id="Editer" type="button" class="btn btn-primary col-2 offset-9" value="Editer"></input> 
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                    <div class="col-4">
+                    <li class="list-group-item">
+                        <h3>Nom Prénom</h3>
+                    </li>
+                    <div class="row">
+                        <div class="col-4">
+
+                            <img src="image/nina4.jpg">
+
+                        </div>
+
+                        <div class="col-8">
+                                <div class="row">
+                                   <div class="col-6"> <label >Fonction</label></div>
+                                   <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6"> <label >Département</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6"> <label >Email</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6">  <label >Téélphone</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <input id="Editer" type="button" class="btn btn-primary col-2 offset-9" value="Editer"></input> 
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                    <div class="col-4">
+                    <li class="list-group-item">
+                        <h3>Nom Prénom</h3>
+                    </li>
+                    <div class="row">
+                        <div class="col-4">
+
+                            <img src="image/nina4.jpg">
+
+                        </div>
+
+                        <div class="col-8">
+                                <div class="row">
+                                   <div class="col-6"> <label >Fonction</label></div>
+                                   <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6"> <label >Département</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6"> <label >Email</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-6">  <label >Téélphone</label></div>
+                                        <div class="col-6"> <label >value</label></div>
+                                </div>
+                                <div class="row">    
+                                                <input id="Editer" type="button" class="btn btn-primary col-2 offset-9" value="Editer"></input> 
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                
+               
+                    
+
+            </div>
+        
+        </form>
+                    
+
+    </body>
+</html>
