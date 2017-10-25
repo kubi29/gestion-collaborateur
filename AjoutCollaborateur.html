@@ -5,114 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body> 
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-        <!-- Custom styles for this template -->
-    
-        <link href="styles.css" rel="stylesheet">
-    
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-        
-        <script>
-            $(document).ready(function() {
-            $("#Ajouter").click(function () { 
-                if (("#nom").val() = "") { 
-                $("#nom").addClass("is-invalid");
-                $("#nom").val(''); 
-                }; 
-            });
-        })
-            
-             
-        </script>
-        <style>
-
-        form {
-                margin-top: 100px; 
-              }
-
-
-        .row {
-            margin-top: 20px;
-        }
-
-        h1 {
-            margin-left :0.5em;
-        }
-        </style>
-
-    </head>
-        <body>
-                <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                    <a class="navbar-brand" href="#">Login</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                                    <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="ListeCollaborateur.html">Collaborateur <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Statistique</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="activite.html">Activité</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                </nav>
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                  </div>
+              
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                      <li><a href="#">Link</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">One more separated link</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#">Link</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <li><a href="#">Collaborateur</a></li>
+                        <li><a href="#">Statistique</a></li>
+                        <li><a href="#">Activité</a></li>
+                    </div>
+                </div>                                               
+        </nav>
 
         <form>
-            <div class="">
+            <div >
                 <h1>Nouveau Collaborateur</h1>
             </div>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-4 offset-1"  > <label for="nom">nom</label></div>
-                <div class="col-6" ><input type="text" class="form-control is-valid" id="nom" ></div>
-                <div class="invalid-feedback">
-                  Veuillez rentrer un nom.
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4 offset-1" ><label for="prenom">Prénom</label></div>
-                <div class="col-6" ><input type="text" class="form-control is-valid" id="prenom" ></div>
-                <div class="invalid-feedback">
-                        Veuillez rentrer un Prénom.
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4 offset-1" ><label for="dateDeNaissance">Date de naissance</label></div>
-                <div class="col-6" ><input type="text" class="form-control is-valid" id="dateDeNaissance"  ></div>
-                <div class="invalid-feedback">
-                        Veuillez rentrer une Date de naissance.
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4 offset-1" ><label for="adresse">Adresse</label></div>
-                <div class="col-6" ><input type="text" class="form-control is-valid" id="adresse"  ></div>
-                <div class="invalid-feedback">
-                        Veuillez rentrer une Adresse.
-                </div>
-              </div>
-              <div class="row">
-                 <div class="col-4 offset-1" ><label for="sécuriterSocial">Numéro de sécurité sociale</label></div>
-                <div class="col-6" ><input type="text" class="form-control is-valid" id="sécuriterSocial"  ></div>
-                <div class="invalid-feedback">
-                        Veuillez rentrer un Numéro de sécurité sociale.
-                </div>
-              </div>
-              <div class="row">
-                <input id="Ajouter" type="button" class="btn btn-primary col-2 offset-9" value="Créer"></input> 
-              </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-3" > <label>nom</label></div>
+                <div class="col-md-6" ><input type="text" class="form-control" placeholder="votre nom"></div>
             </div>
-
+            <div class="row">
+                <div class="col-md-3 col-md-offset-3" ><label>Prénom</label></div>
+                <div class="col-md-6" ><input type="text" class="form-control" placeholder="votre prénom"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-3" ><label>Date de naissance</label></div>
+                <div class="col-md-6" ><input type="text" class="form-control" placeholder="votre date de naissance"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-3" ><label>Adresse</label></div>
+                <div class="col-md-6" ><input type="text" class="form-control" placeholder="votre adresse"></div>
             </div>
         </form>
-    </body>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
 </html>
