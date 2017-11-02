@@ -14,6 +14,16 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
+        <script>
+        
+        function valider(){
+            document.forms[0].action="http://localhost:8080/monAppli/validerNouveauCompte"
+            document.forms[0].method="POST"
+            document.forms[0].submit();
+        }
+        
+        </script>
+
         <style>
                 
                 .bouton{
@@ -73,8 +83,9 @@
                 <div class="row">
                      <h1>Statistiques</h1>   
                 </div>
-                <div class="container">
-                <table class="table table-condensed " border=2>
+                
+                <table class="table table-condensed " >
+                    <thead>
                     <tr>
                         <th align="left">Chemin</th>
                         <th align="left">Nombre de visites</th>
@@ -82,6 +93,8 @@
                         <th align="left">Max (ms)</th>
                         <th align="left">Moyenne (ms)</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr class="active">
                         <td>/collaborateurs/editer</td>
                         <td>5000</td>
@@ -103,9 +116,9 @@
                         <td>58</td>
                         <td>789</td>
                     </tr>
-                
+                </tbody>
                 </table>
-            </div>
+            
     </form>
 </body>
 </html>
